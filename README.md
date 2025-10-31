@@ -86,4 +86,4 @@ See the [LICENSE](LICENSE) file for details.
 
 - Live Application: https://educentre.hermanus.me  
 - System Home: https://whatsai.africa  
-- Repository: https://github.com/saaaisdev/WHATS_EduCentre
+- Repository: https://github.com/saaisdev/WHATS_EduCentre
