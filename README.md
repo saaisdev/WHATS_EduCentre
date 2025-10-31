@@ -85,7 +85,7 @@ The Canvas orchestrates multimodal API calls and writes all outputs directly bac
 
 ### 6. WHATS_sight™ (Live Vision)
 A real-time AI vision engine that:
-- Analyzes webcam or uploaded video feeds  
+- Analyzes ANY SOURCE FILE, Video, Audio, Pdf, Text webcam or uploaded video feeds ANY SIZE ON DEVICE
 - Detects and labels objects frame-by-frame using structured Gemini schemas  
 - Generates synchronized audio narration through the Gemini Live API  
 - Produces scene cards for later use in Compose or Canvas  
@@ -94,7 +94,7 @@ Each analysis generates text, audio, and JSON saved to the Backpack — a practi
 
 ---
 
-### 7. WHATS_showme™ (UI Analysis)
+### 7. WHATS_showme™ AI LAZERPOINTER  (UI Analysis)
 A self-referential assistant that can analyze the interface itself.  
 Users can click any UI element to:
 - Identify the element and explain its function  
@@ -178,5 +178,5 @@ See [LICENSE](LICENSE) for details.
 ## Links
 
 - Live Application: https://educentre.hermanus.me  
-- System Home: https://whatsai.africa  
+- System Home: https://saai.services
 - Repository: https://github.com/saaisdev/WHATS_EduCentre
