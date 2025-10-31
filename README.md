@@ -1,208 +1,182 @@
-WHATS_EduCentre™
+# WHATS_EduCentre™
 
-Built for the Google Chrome Built-in AI Challenge 2025
+**Built for the Google Chrome Built-in AI Challenge 2025**
 
-Live Demo
- · MIT License
+[Live Demo](https://educentre.hermanus.me) · [MIT License](LICENSE)
 
-Overview
+---
 
-WHATS_EduCentre™ is a fully local, multimodal AI operating environment built inside Google Chrome.
-It transforms the browser into a complete education and creativity studio that runs offline, handles all data locally, and interfaces directly with Google’s Built-in AI APIs and Gemini Nano models.
+## Overview
 
-Unlike traditional AI platforms, WHATS_EduCentre™ does not send user data to the cloud. It uses Chrome’s File System Access API and IndexedDB to create encrypted local workspaces called Backpacks.
+**WHATS_EduCentre™** is a fully local, multimodal AI operating environment built inside Google Chrome.  
+It transforms the browser into a complete education and creativity studio that runs offline, handles all data locally, and interfaces directly with Google’s **Built-in AI APIs** and **Gemini Nano** models.
+
+Unlike traditional AI platforms, WHATS_EduCentre™ does not send user data to the cloud.  
+It uses Chrome’s **File System Access API** and **IndexedDB** to create encrypted local workspaces called **Backpacks**.  
 Every file, project, transcript, image, and model interaction remains stored on the user’s device — a secure, private sandbox that becomes a personal AI studio for teachers, students, and creators.
 
-The system follows a clear “Pantry → Extract → Compose → Produce → Export” pipeline, guiding a user from data capture to finished output while keeping AI assistance fully embedded in every stage.
+The system follows a clear “**Pantry → Extract → Compose → Produce → Export**” pipeline, guiding a user from data capture to finished output while keeping AI assistance fully embedded in every stage.
 
-System Structure
-1. Dashboard
+---
 
-The control hub that aggregates all project data. It displays:
+## System Structure
 
-Active personas and context (Teacher, Principal, Parent, etc.)
+### 1. Dashboard
+The control hub that aggregates all project data.  
+Displays:
+- Active personas and context (Teacher, Principal, Parent)
+- Connected camera feeds and live sensors  
+- Project health indicators, task timers, and AI activity logs  
 
-Connected camera feeds and live sensors
-
-Project health indicators, task timers, and AI activity logs
 It serves as both mission control and a teaching aid — giving users a live window into what their AI systems are analyzing, producing, or archiving.
 
-2. Resources
+---
+
+### 2. Resources
+The **Pantry** of the system.  
+Users collect source materials — text, images, audio, PDFs, videos, and datasets.  
+Each file is stored locally through the File System Access API and automatically indexed with metadata (format, origin, tags).  
+Users can drag-and-drop files which become instantly available for AI extraction or creative use later in the workflow.
 
-The “Pantry.”
-Here users collect source materials — text, images, audio, PDFs, videos, and dataset fragments.
-Each file is stored locally through the File System Access API and automatically indexed with metadata (format, origin, tags).
-Users can manually add or drag-and-drop resources, which are instantly available for AI extraction or creative use later in the workflow.
+---
 
-3. Extract
+### 3. Extract
+The first layer of AI processing.  
+Powered by **Gemini 2.5 Flash**, this module performs multimodal extraction:
+- OCR from images and scanned PDFs  
+- Speech-to-Text transcription from uploaded or recorded audio  
+- Scene labeling from still frames or videos  
+- Key insight summarization from long documents  
+- Named entity extraction for structured metadata  
+
+Outputs include:
+- A readable summary for users  
+- A structured JSON object reusable across the system
 
-The first layer of AI processing.
-Gemini 2.5 Flash is used here for multimodal content extraction:
+These results form the knowledge layer for composition and production.
 
-OCR from images and scanned PDFs
+---
 
-Speech-to-Text transcription from uploaded or recorded audio
+### 4. Compose
+The **creative desk**.  
+This editor merges writing, research, and prompt design into one workspace with dynamic persona switching.  
+Users can toggle between **Teacher**, **Principal**, **Student**, or **Parent** roles, each with a unique tone and reasoning model.
 
-Scene labeling from still frames or videos
+Functions include:
+- AI-assisted drafting and outlining  
+- Real-time grammar correction via **Proofreader API**  
+- Context-aware rewriting via **Writer** and **Rewriter APIs**  
+- Inline summarization via **Summarizer API**  
+- Full multilingual translation via **Translator API**
 
-Key insights & summaries from documents
+---
 
-Named entity extraction for structured metadata
+### 5. Creative Canvas
+The heart of WHATS_EduCentre™ — a **multi-asset synthesis engine** capable of generating:
+- Text (Gemini Flash)  
+- Still images (Imagen 4)  
+- Narrated audio (Gemini TTS)  
+- Full video compositions (Veo)
 
-Every extraction produces two outputs:
+Users select any combination of assets — notes, images, transcripts, voice files — and feed them through a creative brief.  
+The Canvas orchestrates multimodal API calls and writes all outputs directly back into the project folder.
 
-A readable summary (for user understanding)
+---
 
-A structured JSON object (for re-use across modules)
+### 6. WHATS_sight™ (Live Vision)
+A real-time AI vision engine that:
+- Analyzes webcam or uploaded video feeds  
+- Detects and labels objects frame-by-frame using structured Gemini schemas  
+- Generates synchronized audio narration through the Gemini Live API  
+- Produces scene cards for later use in Compose or Canvas  
 
-These results form the knowledge layer for subsequent composition and production.
+Each analysis generates text, audio, and JSON saved to the Backpack — a practical example of multimodal streaming running locally in Chrome.
 
-4. Compose
+---
 
-The “creative desk.”
-This environment merges writing, research, and prompt design into a single adaptive editor.
-It supports live persona switching — for example, switching from Teacher (academic tone) to Dad (supportive tone) or Principal Wendy (administrative review).
+### 7. WHATS_showme™ (UI Analysis)
+A self-referential assistant that can analyze the interface itself.  
+Users can click any UI element to:
+- Identify the element and explain its function  
+- Describe its relation to the user’s workflow  
+- Provide guided instructions (“You are in Extract mode — click Compose to draft from results.”)
 
-Key features:
+Demonstrates **Gemini multimodal comprehension** applied to live UI state.
 
-AI-assisted drafting, outlining, and rewriting
+---
 
-Real-time grammar correction via Proofreader API
+### 8. Educator Workbench
+An AI-persona layer embedded in every workspace.  
+Each persona carries its own **systemInstruction** defining voice, tone, and context.  
+Before each message, the current view, file list, and scene data are compiled into model context so that the persona can reason specifically about the user’s current work.
 
-Context-aware rephrasing via Writer and Rewriter APIs
+---
 
-Inline summarization of long sections
+### 9. Utilities and Mini-Apps
+A collection of lightweight, offline-ready utilities integrated into the shell:
+- Timer, Translator, Calculator, Flashcard Generator  
+- Voice Chat with Gemini Live  
+- Game modules for classroom engagement  
+- QR Generator and Safe-Book for parental controls  
+- Local Slides and Document viewers  
 
-Multi-language translation via Translator API
+All tools are part of the same local sandbox — no external servers required.
 
-The Compose view turns any extraction into a structured article, report, or story — guided by whichever persona is active.
+---
 
-5. Creative Canvas
+### 10. System and Governance Layer
+The ethical and operational backbone:
+- **SAAIS** — System governor for AI ethics and persona delegation  
+- **WHATS_AI™** — Internal prompt router for Gemini and local APIs  
+- **WHATS_Currency™** — Tracks Return on Obedience (ROO) metrics  
+- **Settings** — Access control, privacy audit, and sandbox management  
 
-The heart of WHATS_EduCentre™ — where all assets converge.
-It is not limited to text; it is a multi-asset synthesis engine that can generate:
+Together, they make WHATS_EduCentre™ a sovereign, auditable AI ecosystem.
 
-Text (Gemini Flash)
+---
 
-Still images (Imagen 4)
+## How We Built It
 
-Narrated audio (Gemini TTS)
+| Layer | Technology |
+|-------|-------------|
+| Frontend | Angular 18, TypeScript, TailwindCSS |
+| Storage | File System Access API (OPFS), IndexedDB (Dexie.js) |
+| Runtime | Chrome Built-in AI / Gemini Nano |
+| APIs | Prompt API, Proofreader API, Summarizer API, Translator API, Writer API, Rewriter API |
+| Hybrid AI | Gemini 2.5 Flash, Gemini Live API, Gemini TTS API, Imagen 4, Veo |
+| Deployment | Google Cloud Run + Firebase AI Logic |
+| UX | Progressive Web App (PWA) with offline caching and full local integrity |
 
-Full video compositions (Veo)
+---
 
-Users can select any combination of existing files — notes, images, voice tracks, transcripts, or generated JSON — and blend them through a creative brief (“Generate a 60-second explainer using these”).
-The Canvas orchestrates multimodal API calls and assembles outputs directly back into the project.
+## Why It Matters
 
-It’s essentially a localized version of NotebookLM plus Studio — a single-screen production suite.
+Most AI tools depend on centralized servers.  
+**WHATS_EduCentre™** proves that a full-scale, multimodal AI studio can live entirely in the browser — private, offline, and locally sovereign.  
+It unifies education, creativity, and governance in one system and demonstrates the future of ethical client-side AI.
 
-6. WHATS_sight™ (Live Vision)
+---
 
-A dedicated AI vision engine.
+## Accomplishments
 
-Analyzes webcam or uploaded video in real time
+- 27+ operational modules across education, creation, and governance  
+- True multimodal generation: text, image, video, and voice  
+- Real-time narration and scene analysis of live feeds  
+- Seamless offline persistence using OPFS + IndexedDB  
+- Persona-driven guidance and ethical AI oversight  
+- Deployed as a Cloud Run PWA powered 100% by Google AI and Chrome Built-in APIs
 
-Detects and labels objects frame-by-frame (using Gemini structured schema)
+---
 
-Generates live narrations through Gemini Live API
+## License
 
-Produces synchronized transcripts and “scene cards” for reuse in Compose or Canvas
+MIT © 2025 Commander Jaco / WHATS_SYSTEM™  
+See [LICENSE](LICENSE) for details.
 
-Each analysis run saves text, audio, and structured JSON back to the Backpack.
-It demonstrates true multimodal streaming — simultaneous vision, language, and audio synthesis running inside Chrome.
+---
 
-7. WHATS_showme™ (UI Analysis)
+## Links
 
-A meta-assistant that can analyze its own interface.
-Users can click any part of the UI, capture it as an image, and receive:
-
-Identification of the UI element
-
-Explanation of its function
-
-Contextual advice (“You are in Extract mode — this button links to Compose”)
-
-This showcases practical use of Gemini multimodal comprehension on a live, running application.
-
-8. Educator Workbench
-
-An AI-persona layer embedded in every workspace.
-
-Each persona (Teacher, Principal, Student, Parent) has its own systemInstruction with tone, role, and scope.
-
-Before every chat, the current view, file list, and scene data are compiled into the model context.
-
-This allows responses that are deeply specific — e.g., a “Teacher” persona reviewing a child’s assignment will cite data from Extract and Compose directly.
-
-9. Utilities and Mini-Apps
-
-WHATS_EduCentre™ includes a suite of lightweight utilities that operate fully offline:
-
-Timer, Translator, Calculator, Flashcard Generator
-
-Voice Chat with Gemini Live
-
-Game modules and QR Generator for classroom engagement
-
-Sleepover Safe-Book (parental mode)
-
-Slides, Documents, and Trash Bin (local management)
-
-These are all built into the shell, accessible from the lower navigation bar.
-
-10. System and Admin Layer
-
-SAAIS — System governor for AI ethics and role delegation.
-
-WHATS_AI™ — Internal Gemini prompt router that coordinates between local and hybrid APIs.
-
-WHATS_Currency™ — Manages Return on Obedience (ROO) and learning economy metrics.
-
-Settings — Access control, sandbox reset, privacy audit.
-
-This layer turns WHATS_EduCentre™ into a sovereign, auditable AI ecosystem, not just a single app.
-
-How we built it
-Layer	Technology
-Frontend	Angular 18, TypeScript, TailwindCSS
-Storage	File System Access API (OPFS), IndexedDB (Dexie.js)
-Runtime	Chrome Built-in AI / Gemini Nano
-APIs	Prompt API, Proofreader API, Summarizer API, Translator API, Writer API, Rewriter API
-Hybrid AI	Gemini 2.5 Flash, Gemini Live API, Gemini TTS API, Imagen 4, Veo
-Deployment	Google Cloud Run + Firebase AI Logic
-UX	Progressive Web App with offline caching and full local data integrity
-Why it matters
-
-Traditional AI relies on cloud processing and external data collection.
-WHATS_EduCentre™ proves that a multimodal, full-scale AI studio can live entirely in the browser — preserving privacy, running offline, and still delivering professional-grade generative power.
-
-It’s not a chatbot. It’s a local AI operating system — the foundation for future classrooms, maker studios, and creative ecosystems.
-
-Accomplishments
-
-27+ operational modules under a unified local AI shell
-
-True multimodal generation across text, image, video, and voice
-
-Live narration and analysis of real-world feeds
-
-Seamless offline persistence using OPFS and IndexedDB
-
-Persona-driven governance and ethical AI framework
-
-Fully deployed on Cloud Run, installable as a PWA
-
-100% powered by Chrome’s Built-in AI + Gemini Nano
-
-License
-
-MIT © 2025 Commander Jaco / WHATS_SYSTEM™
-See LICENSE
- for details.
-
-Links
-
-Live Application: https://educentre.hermanus.me
-
-System Home: https://whatsai.africa
-
-Repository: https://github.com/saaisdev/WHATS_EduCentre
+- Live Application: https://educentre.hermanus.me  
+- System Home: https://whatsai.africa  
+- Repository: https://github.com/saaisdev/WHATS_EduCentre
