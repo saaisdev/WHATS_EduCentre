@@ -22,7 +22,7 @@ The result is an offline-capable environment for AI-assisted learning, analysis,
 - Summarizer — Condense complex material into key insights  
 - Translator — Translate any file or text instantly  
 - Writer and Rewriter — Draft or refine content intelligently  
-- WHATS_sight™ — Analyze images, PDFs, or live webcam feeds with Gemini 2.5 Flash  
+- WHATS_sight™ — Analyze Videos, Audio, images, PDFs, or live webcam feeds with Gemini 2.5 Flash  
 - Creative Canvas — Combine text, images, and videos using Imagen 4, Veo, and Gemini TTS  
 - Live Narrator — Real-time audio synthesis via Gemini Live API  
 
