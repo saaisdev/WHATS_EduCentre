@@ -179,4 +179,6 @@ See [LICENSE](LICENSE) for details.
 
 - Live Application: https://educentre.hermanus.me  
 - System Home: https://saai.services
+- Youtube Channel : https://www.youtube.com/@SAAIServices
+- Google Drive Link for other media and more in depth explainers : https://drive.google.com/drive/folders/17XKmk7ZFUqFbme-LTRTN-svusfXLYoyK?usp=drive_link
 - Repository: https://github.com/saaisdev/WHATS_EduCentre
