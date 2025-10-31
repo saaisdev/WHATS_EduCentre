@@ -170,7 +170,7 @@ It unifies education, creativity, and governance in one system and demonstrates 
 
 ## License
 
-MIT © 2025 Commander Jaco / WHATS_SYSTEM™  
+WHATS_EduCentre™ Demonstration License (2025) 
 See [LICENSE](LICENSE) for details.
 
 ---
