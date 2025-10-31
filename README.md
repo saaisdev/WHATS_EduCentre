@@ -2,7 +2,8 @@
 
 **Built for the Google Chrome Built-in AI Challenge 2025**
 
-[Live Demo](https://educentre.hermanus.me) · [MIT License](LICENSE)
+[Live Demo](https://educentre.hermanus.me) · [WHATS_EduCentre™ Demonstration License (2025)
+License](LICENSE)
 
 ---
 
